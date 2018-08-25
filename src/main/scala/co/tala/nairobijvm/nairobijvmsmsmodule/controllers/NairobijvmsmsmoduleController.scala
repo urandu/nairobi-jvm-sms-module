@@ -1,5 +1,7 @@
 package co.tala.nairobijvm.nairobijvmsmsmodule.controllers
 
+import co.tala.nairobijvm.nairobijvmsmsmodule.configs.GeneralConfig
+import co.tala.nairobijvm.nairobijvmsmsmodule.utils.NamedLogger
 import javax.inject._
 import play.api._
 import play.api.mvc._
@@ -9,7 +11,8 @@ import play.api.mvc._
  * application's home page.
  */
 @Singleton
-class NairobijvmsmsmoduleController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
+class NairobijvmsmsmoduleController @Inject()(cc: ControllerComponents, configuration: Configuration)
+  extends AbstractController(cc) with NamedLogger {
 
   /**
    * Create an Action to render an HTML page.
@@ -19,6 +22,9 @@ class NairobijvmsmsmoduleController @Inject()(cc: ControllerComponents) extends 
    * a path of `/`.
    */
   def index() = Action { implicit request: Request[AnyContent] =>
-    Ok(views.html.index())
+    Logger.debug("default action access")
+    logger.debug("custom action access")
+    val general = configuration.get[GeneralConfig](GeneralConfig.classificationKey)
+    Ok(s"The app name is: ${general.appName}"+ s"\n App version:  ${general.appVersion} ")
   }
 }
