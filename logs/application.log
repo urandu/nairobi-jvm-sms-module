@@ -1,0 +1,205 @@
+2018-08-25 12:23:43,785 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2018-08-25 12:23:43,785 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-3 - logger log1-Slf4jLogger started
+2018-08-25 12:23:43,786 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-3 - Default Loggers started
+2018-08-25 12:23:43,796 [DEBUG] from controllers.AssetsConfiguration in play-dev-mode-akka.actor.default-dispatcher-21 - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2018-08-25 12:23:43,799 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-21 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-08-25 12:23:43,800 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-21 - Application started (Dev)
+2018-08-25 12:23:43,808 [DEBUG] from co.tala.nairobijvm.nairobijvmsmsmodule.controllers.NairobijvmsmsmoduleController in application-akka.actor.default-dispatcher-3 - namawa
+2018-08-25 12:25:04,799 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-21 - Aborting tcp connection to /0:0:0:0:0:0:0:1:54546 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75000000000 nanoseconds. This is configurable by akka.http.[server|client].idle-timeout.
+2018-08-25 12:37:21,818 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-26 - New connection accepted
+2018-08-25 12:37:23,484 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-28 - 
+
+! @793fjpei8 - Internal server error, for (GET) [/MESSAGE] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Int does not take parameters]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:33)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:24)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:51)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:51)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:76)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:412)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:50)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:55)
+	at play.runsupport.Reloader.reload(Reloader.scala:412)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:123)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:222)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:138)
+	at akka.stream.impl.fusing.MapAsync$$anon$25.onPush(Ops.scala:1194)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:519)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:482)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:378)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:585)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:469)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:560)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:742)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:757)
+	at akka.actor.Actor.aroundReceive(Actor.scala:517)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:515)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:667)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:590)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:559)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:257)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2018-08-25 12:37:36,181 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-28 - 
+
+! @793fk07d6 - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Int does not take parameters]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:33)
+	at scala.Option.map(Option.scala:146)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:24)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:51)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:51)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:76)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:412)
+	at play.runsupport.Reloader$$anon$5.run(Reloader.scala:50)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:55)
+	at play.runsupport.Reloader.reload(Reloader.scala:412)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:123)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:222)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:138)
+	at akka.stream.impl.fusing.MapAsync$$anon$25.onPush(Ops.scala:1194)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:519)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:482)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:378)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:585)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:469)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:560)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:742)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:757)
+	at akka.actor.Actor.aroundReceive(Actor.scala:517)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:515)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:667)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:590)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:559)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:257)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:224)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:234)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+2018-08-25 12:38:12,335 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-2 - Performing phase [actor-system-terminate] with [1] tasks: [terminate-system]
+2018-08-25 12:38:12,337 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-7 - shutting down: StandardOutLogger started
+2018-08-25 12:38:12,474 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2018-08-25 12:38:12,475 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-3 - logger log1-Slf4jLogger started
+2018-08-25 12:38:12,475 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-3 - Default Loggers started
+2018-08-25 12:38:12,487 [DEBUG] from controllers.AssetsConfiguration in play-dev-mode-akka.actor.default-dispatcher-28 - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2018-08-25 12:38:12,489 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-28 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-08-25 12:38:12,489 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-28 - Application started (Dev)
+2018-08-25 12:38:12,498 [DEBUG] from application in application-akka.actor.default-dispatcher-3 - default action access
+2018-08-25 12:38:12,498 [DEBUG] from co.tala.nairobijvm.nairobijvmsmsmodule.controllers.NairobijvmsmsmoduleController in application-akka.actor.default-dispatcher-3 - custom action access
+2018-08-25 12:39:33,080 [DEBUG] from akka.actor.RepointableActorRef in play-dev-mode-akka.actor.default-dispatcher-28 - Aborting tcp connection to /0:0:0:0:0:0:0:1:54622 because of upstream failure: akka.http.impl.engine.HttpIdleTimeoutException: HTTP idle-timeout encountered, no bytes passed in the last 75000000000 nanoseconds. This is configurable by akka.http.[server|client].idle-timeout.
+2018-08-25 12:41:39,776 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-30 - New connection accepted
+2018-08-25 12:41:39,862 [INFO] from co.tala.nairobijvm.nairobijvmsmsmodule.controllers.MessageController in application-akka.actor.default-dispatcher-2 - received request: {"message":"send sms","destination":"0726430386","message_type":"sms"}
+2018-08-25 12:51:46,416 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-32 - New connection accepted
+2018-08-25 12:51:48,571 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-2 - Performing phase [actor-system-terminate] with [1] tasks: [terminate-system]
+2018-08-25 12:51:48,573 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-6 - shutting down: StandardOutLogger started
+2018-08-25 12:51:48,710 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
+2018-08-25 12:51:48,710 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-2 - logger log1-Slf4jLogger started
+2018-08-25 12:51:48,711 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-2 - Default Loggers started
+2018-08-25 12:51:48,719 [DEBUG] from controllers.AssetsConfiguration in play-dev-mode-akka.actor.default-dispatcher-34 - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2018-08-25 12:51:48,723 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-34 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-08-25 12:51:48,723 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-34 - Application started (Dev)
+2018-08-25 12:51:48,730 [INFO] from co.tala.nairobijvm.nairobijvmsmsmodule.controllers.MessageController in application-akka.actor.default-dispatcher-2 - Received send message request with {"message":"send sms","destination":"0726430386","message_type":"sms"}
+2018-08-25 12:51:48,870 [WARN] from co.tala.nairobijvm.nairobijvmsmsmodule.controllers.MessageController in application-akka.actor.default-dispatcher-2 - Invalid sendMessageRequest payload
+2018-08-25 12:52:19,043 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-30 - New connection accepted
+2018-08-25 12:52:20,779 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-3 - Performing phase [actor-system-terminate] with [1] tasks: [terminate-system]
+2018-08-25 12:52:20,780 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-6 - shutting down: StandardOutLogger started
+2018-08-25 12:52:20,922 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
+2018-08-25 12:52:20,922 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-2 - logger log1-Slf4jLogger started
+2018-08-25 12:52:20,923 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-2 - Default Loggers started
+2018-08-25 12:52:20,930 [DEBUG] from controllers.AssetsConfiguration in play-dev-mode-akka.actor.default-dispatcher-36 - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2018-08-25 12:52:20,933 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-36 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-08-25 12:52:20,933 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-36 - Application started (Dev)
+2018-08-25 12:52:20,940 [INFO] from co.tala.nairobijvm.nairobijvmsmsmodule.controllers.MessageController in application-akka.actor.default-dispatcher-2 - Received send message request with {"message":"send sms","destination":"0726430386","message_type":"sms"}
+2018-08-25 12:52:20,943 [INFO] from co.tala.nairobijvm.nairobijvmsmsmodule.controllers.MessageController in application-akka.actor.default-dispatcher-2 - Received  valid sendMessageRequest
+2018-08-25 13:05:18,845 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-37 - New connection accepted
+2018-08-25 13:05:20,633 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-4 - Performing phase [actor-system-terminate] with [1] tasks: [terminate-system]
+2018-08-25 13:05:20,634 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-4 - shutting down: StandardOutLogger started
+2018-08-25 13:05:20,738 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2018-08-25 13:05:20,738 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-3 - logger log1-Slf4jLogger started
+2018-08-25 13:05:20,738 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-3 - Default Loggers started
+2018-08-25 13:05:20,746 [DEBUG] from controllers.AssetsConfiguration in play-dev-mode-akka.actor.default-dispatcher-37 - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2018-08-25 13:05:20,748 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-37 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2018-08-25 13:05:20,748 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-37 - Application started (Dev)
+2018-08-25 13:05:20,753 [INFO] from co.tala.nairobijvm.nairobijvmsmsmodule.controllers.MessageController in application-akka.actor.default-dispatcher-3 - Received send message request with {"mesjsage":"send sms","destination":"0726430386","message_type":"sms"}
+2018-08-25 13:05:20,757 [WARN] from co.tala.nairobijvm.nairobijvmsmsmodule.controllers.MessageController in application-akka.actor.default-dispatcher-3 - Invalid sendMessageRequest payload

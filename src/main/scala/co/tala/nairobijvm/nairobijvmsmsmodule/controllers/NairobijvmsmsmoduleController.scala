@@ -27,4 +27,9 @@ class NairobijvmsmsmoduleController @Inject()(cc: ControllerComponents, configur
     val general = configuration.get[GeneralConfig](GeneralConfig.classificationKey)
     Ok(s"The app name is: ${general.appName}"+ s"\n App version:  ${general.appVersion} ")
   }
+
+  def logName(name:String) = Action { implicit request: Request[AnyContent] =>
+    logger.debug(name)
+    Ok(s"logged name: ${name}")
+  }
 }
