@@ -203,3 +203,8 @@ play.sbt.PlayExceptions$CompilationException: Compilation error[Int does not tak
 2018-08-25 13:05:20,748 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-37 - Application started (Dev)
 2018-08-25 13:05:20,753 [INFO] from co.tala.nairobijvm.nairobijvmsmsmodule.controllers.MessageController in application-akka.actor.default-dispatcher-3 - Received send message request with {"mesjsage":"send sms","destination":"0726430386","message_type":"sms"}
 2018-08-25 13:05:20,757 [WARN] from co.tala.nairobijvm.nairobijvmsmsmodule.controllers.MessageController in application-akka.actor.default-dispatcher-3 - Invalid sendMessageRequest payload
+2018-08-26 22:27:16,586 [INFO] from play.core.server.AkkaHttpServer in pool-7-thread-5 - Stopping server...
+2018-08-26 22:27:16,732 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-38 - Unbinding endpoint /0:0:0:0:0:0:0:0:9000
+2018-08-26 22:27:16,735 [DEBUG] from akka.io.TcpListener in play-dev-mode-akka.actor.default-dispatcher-38 - Unbound endpoint /0:0:0:0:0:0:0:0:9000, stopping listener
+2018-08-26 22:27:16,777 [DEBUG] from akka.actor.CoordinatedShutdown in application-akka.actor.default-dispatcher-2 - Performing phase [actor-system-terminate] with [1] tasks: [terminate-system]
+2018-08-26 22:27:16,784 [DEBUG] from akka.event.EventStream in application-akka.actor.default-dispatcher-6 - shutting down: StandardOutLogger started
